@@ -15,7 +15,12 @@
 
 
 
-## Original Data Sources include   * Web Scraping: 'html' from https://www.kaggle.com/patrickmurphy/nfl-arrests   * pull: 'json' from https://www.kaggle.com/zynicide/nfl-football-player-stats#profiles_1512362725.022629.json   * Create dataframe from NFL Arrests csv file   * Choose columns wanted from original dataframe   * Rename columns   * Create dataframe from .json file nfl profiles 
+## Original Data Sources include   * Web Scraping: 'html' from https://www.kaggle.com/patrickmurphy/nfl-arrests   
+      * pull: 'json' from https://www.kaggle.com/zynicide/nfl-football-player-stats#profiles_1512362725.022629.json   
+      * Create dataframe from NFL Arrests csv file   
+      * Choose columns wanted from original dataframe   
+      * Rename columns   
+      * Create dataframe from .json file nfl profiles 
 
 ## Transform: (Data Cleanup & Analysis)   * Clean nfl arrests by saving only the 1st instance of a player name and removing duplicate entries.   * Clean nfl profiles. Duplicate players removed from the profile section   * All na files filled with not applicable 
 
