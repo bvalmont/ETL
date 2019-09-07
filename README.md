@@ -38,11 +38,8 @@
 
 ### A sampling of the code used for transformation can be found below:
 ###### `nfl_arrests_df = arrests_data_df[['NAME', 'DATE', 'CASE', 'CATEGORY']].copy()`
-###### `nfl_arrests_df = nfl_arrests_df.rename(columns={"DATE": "offense_date",
-                                                "NAME": "player",
-                                                "CASE": "outcome",
-                                                "CATEGORY": "charge"})`
-
+###### `nfl_arrests_df = nfl_arrests_df.rename(columns={"DATE": "offense_date", "NAME": "player", "CASE": "outcome", "CATEGORY": "charge"})`
+                                                
        
 
 
