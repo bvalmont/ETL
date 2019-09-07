@@ -23,9 +23,9 @@
       * Create dataframe from .json file nfl profiles 
       
 ## PLease see the code below for the process of extracting the data
-######`csv_file = "NFL_arrests.csv"`
-######`arrests_data_df = pd.read_csv(csv_file)`
-######`arrests_data_df.head()`
+###### `csv_file = "NFL_arrests.csv"`
+###### `arrests_data_df = pd.read_csv(csv_file)`
+###### `arrests_data_df.head()`
 
 ## Transform: (Data Cleanup & Analysis)  
 ##  ![Alt Text](https://www.bing.com/th?id=OIP.l8MinJm6s4scX7EmLp_hvAAAAA&w=179&h=178&c=7&o=5&dpr=1.5&pid=1.7)
