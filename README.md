@@ -36,6 +36,13 @@
 ### As part of the transformation of the data, the columns of each new created dataframe was evaluated and columns that were relevant to the project was selected from the dataframes.  Next, some columns were renamed to give them more descriptive labeling.  After manipulating columns, each dataframe was evaluated to find what type of data was included in the database, the shape of the data meaning the number of rows and columns in the database, missing data, and duplicate data. 
 ### After evaluating all the aspects mentioned above, the nfl_profiles_df dataframe was found to have missing data in the "college","draft_team", and "hometown" columns. The missing data in those columns would be filled with "not available", "not drafted", and "not available" respectively due to the desire to not eliminate any rows of data from the dataframe.  Each dataframe was found to have duplicate data in the player column.  The duplicates were dropped except for the first instance of the player name.  The reason for this choice is due to the fact that we were addressing only one instance of an NFL player's arrests and not taking into account multiple arrests for the same individual.  
 
+### A sampling of the code used for transformation can be found below:
+###### `nfl_arrests_df = arrests_data_df[['NAME', 'DATE', 'CASE', 'CATEGORY']].copy()`
+###### `nfl_arrests_df = nfl_arrests_df.rename(columns={"DATE": "offense_date",
+                                                "NAME": "player",
+                                                "CASE": "outcome",
+                                                "CATEGORY": "charge"})`
+
        
 
 
