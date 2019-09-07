@@ -11,3 +11,7 @@ In this project SQL Alchemy was used to connect to PostgreSQL; so in essence SQL
 2.  Add the 2 panda dataframes to the local database with the code below:
 ###### `nfl_arrests_df.to_sql(name='nfl_arrests', con=engine, if_exists='append', index=True)`
 ###### `nfl_profiles_df.to_sql(name='nfl_profiles', con=engine, if_exists='append', index=True)`
+
+## After Dataframes Loaded into PostgreSQL
+After the tables were loaded into PostgreSQL a query was performed using SQL Alchemy to combine the data of each table in a format that would give much more interesting data regarding the NFL players in the dataframe.  The code for running the query is below:
+######`query = "select nfl_arrests.player, nfl_arrests.offense_date, nfl_arrests.outcome, nfl_arrests.charge, nfl_profiles.hometown,nfl_profiles.college, nfl_profiles.draft_team From nfl_arrests Inner Join nfl_profiles ON nfl_arrests.player = nfl_profiles.player"`
