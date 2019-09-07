@@ -1,6 +1,6 @@
 # **NFL Player Profiles with Arrest records (ETL-Project)**
 
-## The purpose of this project is is to take data from different sources otherwise known as extract, then transform the data by dealing with missing values, choosing data to include in the final table, renaming columns, and dropping duplicate data, and finally loading the transformed data into a relational database. The project also identified NFL player arrest records and their demographic player records pulled from player profile records. As a bonus, we are also asking: "Which college did the most players with arrest records during the period 2000 -2017 come from?"
+## The purpose of this project is to take data from different sources otherwise known as extract, then transform the data by dealing with missing values, choosing data to include in the final table, renaming columns, and dropping duplicate data, and finally loading the transformed data into a relational database. The project also identified NFL player arrest records and their demographic player records pulled from player profile records. As a bonus, we are also asking: "Which college did the most players with arrest records during the period 2000 -2017 come from?"
 
 ## The Process:
 
@@ -15,7 +15,8 @@
 
 
 
-## Original Data Sources include   * Web Scraping: 'html' from https://www.kaggle.com/patrickmurphy/nfl-arrests  
+## Original Data Sources include   
+   * Web Scraping: 'html' from https://www.kaggle.com/patrickmurphy/nfl-arrests  
    * pull: 'json' from https://www.kaggle.com/zynicide/nfl-football-player-stats#profiles_1512362725.022629.json   
    * Create dataframe from NFL Arrests csv file   
    * Choose columns wanted from original dataframe   
