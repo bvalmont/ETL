@@ -22,7 +22,8 @@
       * Rename columns   
       * Create dataframe from .json file nfl profiles 
 
-## Transform: (Data Cleanup & Analysis)   
+## Transform: (Data Cleanup & Analysis)  
+##  ![Alt Text](https://www.bing.com/th?id=OIP.l8MinJm6s4scX7EmLp_hvAAAAA&w=179&h=178&c=7&o=5&dpr=1.5&pid=1.7)
        * Clean nfl arrests by saving only the 1st instance of a player name and removing duplicate entries.   
        * Clean nfl profiles. Duplicate players removed from the profile section   
        * All na files filled with not applicable 
