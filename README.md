@@ -39,6 +39,10 @@
 ### A sampling of the code used for transformation can be found below:
 ###### `nfl_arrests_df = arrests_data_df[['NAME', 'DATE', 'CASE', 'CATEGORY']].copy()`
 ###### `nfl_arrests_df = nfl_arrests_df.rename(columns={"DATE": "offense_date", "NAME": "player", "CASE": "outcome", "CATEGORY": "charge"})`
+###### `nfl_arrests_df.dtypes`
+###### `nfl_arrests_df.shape`
+###### `nfl_arrests_df.isna().sum()`
+###### `nfl_arrests_df.drop_duplicates(subset = 'player', keep = 'first', inplace = True)`
                                                 
        
 
