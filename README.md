@@ -6,5 +6,5 @@
 ## Steps in the loading process:
 In this project SQL Alchemy was used to connect to PostgreSQL; so in essence SQL Alchemy is a ORM that will be connected to PostgreSQL through the use of python and Jupyter Notebooks.
 1.  Connect the orm to the local database with the code below:
-    1. `engine = create_engine(f"postgresql://postgres:{secret.user_pass}@localhost:5432/nfl_etl")`
-        `connection = engine.connect()`
+`engine = create_engine(f"postgresql://postgres:{secret.user_pass}@localhost:5432/nfl_etl")`
+`connection = engine.connect()`
