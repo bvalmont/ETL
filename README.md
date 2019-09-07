@@ -8,3 +8,6 @@ In this project SQL Alchemy was used to connect to PostgreSQL; so in essence SQL
 1.  Connect the orm to the local database with the code below:
 ###### `engine = create_engine(f"postgresql://postgres:{secret.user_pass}@localhost:5432/nfl_etl")`
 ###### `connection = engine.connect()`
+2.  Add the 2 panda dataframes to the local database with the code below:
+###### `nfl_arrests_df.to_sql(name='nfl_arrests', con=engine, if_exists='append', index=True)`
+###### `nfl_profiles_df.to_sql(name='nfl_profiles', con=engine, if_exists='append', index=True)`
